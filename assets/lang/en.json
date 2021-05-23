@@ -1,0 +1,31 @@
+{ 
+  
+  "bottom.nav.explorer": "Explorer",
+  "bottom.nav.cart": "Cart",
+  "bottom.nav.favorites": "Favorites",
+
+  "welcome.slider1.title": "¿Hay Appetit? busca qué comer",
+  "welcome.slider2.title": "Explora las opciones",
+  "welcome.slider3.title": "Recíbelo en tu casa",
+  "welcome.slider1.description": "Cuando la barriga avisa, es hora de encargar algo para comer, con Appetit te lo simplificamos.",
+  "welcome.slider2.description": "Revisa los mejores restaurants cerca de tu zona, busca sus mejores platos y haz tu pedido.",
+  "welcome.slider3.description": "Muchos de los lugares hacen delivery, podrás arreglar la entrega de tu comida.",
+  "welcome.slider.btnLogin": "Entendido",
+
+  "profile.about.me": "Mis datos",
+  "profile.email": "Email",
+  "profile.phone": "Teléfono",
+  "profile.address": "Dirección de entrega",
+  "profile.join.date": "Activo desde",
+  "profile.config": "Configuración",
+  "profile.dark.mode.active": "Modo activado",
+  "profile.dark.mode.deactive": "Modo desactivado",
+  "profile.dark.mode.light": "Cambiar a modo claro",
+  "profile.dark.mode.dark": "Cambiar a modo oscuro",
+  "profile.logout": "Salir",
+  "profile.delete.account": "Borrar cuenta",
+
+  "cart.empty": "No tienes ningún pedido\n¡Busca algo que te guste!",
+  "cart.empty.btn.explore.now": "Explora ahora"
+
+}
