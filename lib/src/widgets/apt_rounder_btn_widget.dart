@@ -26,7 +26,8 @@ class AptRounderBtnWidget extends StatelessWidget {
       height: btnSize,
       child: TextButton(
         style: TextButton.styleFrom(
-          backgroundColor: (backgroundColor!=null) ? backgroundColor : (_themeProvider.darkTheme ? Colors.white.withOpacity(0.04) : Colors.black.withOpacity(0.04)),
+          // backgroundColor: (backgroundColor!=null) ? backgroundColor : (_themeProvider.darkTheme ? Colors.white.withOpacity(0.04) : Colors.black.withOpacity(0.04)),
+          backgroundColor: (backgroundColor!=null) ? backgroundColor : Colors.transparent,
           shape: CircleBorder(),
           primary: (backgroundColor!=null) ? Colors.white : (_themeProvider.darkTheme ? Colors.white : Colors.black),
         ),

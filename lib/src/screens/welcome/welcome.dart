@@ -18,7 +18,7 @@ class WelcomeScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             const SizedBox(
-              height: 18,
+              height: kDefaultPadding * 2 ,
             ),
             Container(
               width: double.infinity,
