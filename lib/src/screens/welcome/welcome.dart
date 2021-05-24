@@ -13,13 +13,11 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BackgroundWidget(
-      bgImage: 2,
       showAppBar: false,
-      bgOpacity: 0.7,
       pageBody: SafeArea(
         child: Column(
           children: <Widget>[
-            SizedBox(
+            const SizedBox(
               height: 18,
             ),
             Container(
@@ -67,7 +65,7 @@ class _WelcomeSlider extends StatelessWidget {
         }
         return Slideshow(
           dotColorSelect: kPrimaryColor,
-          dotsColor: _themeProvider.darkTheme ? kDMTextColor : kGrayColor,
+          dotsColor: _themeProvider.darkTheme ? kDMTextColor : kLMTextColor,
           dotSizeSelect: 14,
           dotSizeNormal: 10,
           dotsTop: false,

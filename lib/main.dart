@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp> {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarIconBrightness: _themeProvider.darkTheme ? Brightness.light : Brightness.dark,
       statusBarColor: Colors.transparent,
-      systemNavigationBarColor: _themeProvider.darkTheme ? kDMBottomNabBar : kLMBottomNabBar,
+      systemNavigationBarColor: _themeProvider.darkTheme ? kDMBackgroundScreen : kLMBackgroundScreen,
       systemNavigationBarIconBrightness: _themeProvider.darkTheme ? Brightness.light : Brightness.dark,
     ));
     return MaterialApp(
@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
         primaryColor: Color(0xFFFD5616),
       ),
       initialRoute:  (prefs.readPreferenceBool("welcome")) ? 'home' : 'welcome',
-      // initialRoute: "welcome",
+      // initialRoute: "profile2",
       routes: appRoutes,
     );
   }

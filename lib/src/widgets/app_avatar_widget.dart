@@ -49,7 +49,7 @@ class AppAvatarWidget extends StatelessWidget {
             style: TextStyle(
               color: _calculateColorInicials(),
               fontWeight: FontWeight.w800,
-              fontSize: sizeRadius * 0.8,
+              fontSize: (sizeRadius > 20) ? sizeRadius / 2 : sizeRadius * 0.8,
             ),
           )
         : ClipOval(

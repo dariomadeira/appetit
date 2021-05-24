@@ -24,8 +24,8 @@ class AreaTitleWidget extends StatelessWidget {
         title,
         style: TextStyle(
           fontSize: 26,
-          color: themeProvider.darkTheme ? kDMTitleTextColor : kTitleTextColor,
-          fontWeight: FontWeight.w800,
+          color: themeProvider.darkTheme ? kDMTitleTextColor : kLMTitleTextColor,
+          fontWeight: FontWeight.w700,
         ),
       ),
     );

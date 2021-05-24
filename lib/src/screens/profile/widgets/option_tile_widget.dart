@@ -58,7 +58,7 @@ class OptionTile extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(width: 8),
+            const SizedBox(width: 12),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,7 +67,7 @@ class OptionTile extends StatelessWidget {
                     btnTitle,
                     style: TextStyle(
                       fontSize: 16,
-                      color: _themeProvider.darkTheme ? kDMTitleTextColor : kTitleTextColor,
+                      color: _themeProvider.darkTheme ? kDMTitleTextColor : kLMTitleTextColor,
                       fontWeight: FontWeight.w500,
                     ),
                     overflow: TextOverflow.ellipsis,
@@ -79,7 +79,7 @@ class OptionTile extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 14,
                         // color: kGrayDark,
-                        color: _themeProvider.darkTheme ? kDMTextColor : kGrayDark,
+                        color: _themeProvider.darkTheme ? kDMTextColor : kLMTextColor,
                       ),
                       overflow: TextOverflow.ellipsis,
                     ),

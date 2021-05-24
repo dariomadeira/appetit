@@ -256,7 +256,7 @@ class _Slide extends StatelessWidget {
               fontWeight: FontWeight.w700,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text(
@@ -264,11 +264,11 @@ class _Slide extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
-              color: _themeProvider.darkTheme ? kDMTitleTextColor : kTitleTextColor,
+              color: _themeProvider.darkTheme ? kDMTitleTextColor : kLMTitleTextColor,
               fontWeight: FontWeight.w400,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           if (totalSliders == theSlider) Container(

@@ -46,7 +46,7 @@ class EmptyState extends StatelessWidget {
                 width: size.width / 3.5,
                 height: size.width / 3.5,
               ),
-              SizedBox(
+              const SizedBox(
                 height: kDefaultPadding,
               ),
               Text(
@@ -54,11 +54,11 @@ class EmptyState extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
-                  color: _themeProvider.darkTheme ? kDMTitleTextColor : kTitleTextColor,
+                  color: _themeProvider.darkTheme ? kDMTitleTextColor : kLMTitleTextColor,
                   fontWeight: FontWeight.w400,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: kDefaultPadding,
               ),
               Visibility(

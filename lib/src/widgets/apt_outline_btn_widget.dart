@@ -19,15 +19,15 @@ class AptOutlineBtnWidget extends StatelessWidget {
         shape: StadiumBorder(),
         side: BorderSide(
           width: 2,
-          color: kGbtnBorder,
+          color: kGBtnBorder,
         ),
-        primary: themeProvider.darkTheme ? Colors.white : kGbtnText,
+        primary: themeProvider.darkTheme ? Colors.white : Colors.black,
       ),
       onPressed: accion,
       child: Text(
         btnText,
         style: TextStyle(
-          color: themeProvider.darkTheme ? kDMTextColor :  kGbtnText,
+          color: themeProvider.darkTheme ? kDMTextColor :  kLMTextColor,
         ),
       ),
     );
