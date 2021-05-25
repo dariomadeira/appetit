@@ -54,11 +54,11 @@ class OptionTile extends StatelessWidget {
                 child: Icon(
                   iconBtn,
                   color: _calculateColor(iconColor),
-                  size: 22,
+                  size: 28,
                 ),
               ),
             ),
-            const SizedBox(width: 12),
+            const SizedBox(width: kDefaultPadding - 8),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

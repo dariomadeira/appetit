@@ -22,8 +22,9 @@
   "profile.dark.mode.deactive": "Modo desactivado",
   "profile.dark.mode.light": "Cambiar a modo claro",
   "profile.dark.mode.dark": "Cambiar a modo oscuro",
-  "profile.logout": "Cerrar sesión",
-  "profile.delete.account": "Borrar cuenta",
+  "profile.logout": "Cerrar\nsesión",
+  "profile.delete.account": "Borrar\ncuenta",
+  "profile.change.picture": "Cambiar\nfoto",
 
   "cart.empty": "No tienes ningún pedido\n¡Busca algo que te guste!",
   "cart.empty.btn.explore.now": "Explora ahora"

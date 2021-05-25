@@ -10,9 +10,9 @@ const kPrimaryColor = Color(0xFFFD5616);
 const kSecondaryColor = Color(0xFFFDC43C);
 
 // LIGHT MODE
-const kLMBackgroundScreen = Color(0xFFFDFCFD);
-const kLMTitleTextColor = Color(0xFF30384D);
-const kLMTextColor = Color(0xFF4D5875);
+const kLMBackgroundScreen = Color(0xFFF3F3F5);
+const kLMTitleTextColor = Color(0xFF1E2020);
+const kLMTextColor = Color(0xFF6F7372);
 
 
 // const kLMBottomNabBar = Color(0xFFf9f9f9);
@@ -22,6 +22,7 @@ const kLMTextColor = Color(0xFF4D5875);
 const kDMBackgroundScreen = Color(0xFF202124);
 const kDMTitleTextColor = Color(0xFFFFFFFF);
 const kDMTextColor = Color(0xFFBBBFC4);
+const kDMBackgroundPrimary = Color(0xFF2A2B2E);
 
 
 

@@ -4,7 +4,6 @@ import 'package:appetit/src/localizations/app_localization.dart';
 import 'package:appetit/src/preferences/preferences.dart';
 import 'package:appetit/src/providers/theme_provider.dart';
 import 'package:appetit/src/screens/welcome/widgets/slideshow_widget.dart';
-import 'package:appetit/src/widgets/background_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
@@ -12,9 +11,10 @@ import 'package:provider/provider.dart';
 class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BackgroundWidget(
-      showAppBar: false,
-      pageBody: SafeArea(
+    final _themeProvider = Provider.of<ThemeProvider>(context);
+    return Scaffold(
+      backgroundColor: _themeProvider.darkTheme ? kDMBackgroundScreen : kLMBackgroundScreen,
+      body: SafeArea(
         child: Column(
           children: <Widget>[
             const SizedBox(

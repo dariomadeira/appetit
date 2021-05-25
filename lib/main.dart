@@ -34,13 +34,11 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final prefs = AppPreferences();
-
   @override
   void initState() {
     Provider.of<ThemeProvider>(context, listen: false).initTheme();
     super.initState();
   }
-
   @override
   Widget build(BuildContext context) {
     WidgetsBinding.instance.renderView.automaticSystemUiAdjustment=false;
@@ -66,7 +64,7 @@ class _MyAppState extends State<MyApp> {
         primaryColor: Color(0xFFFD5616),
       ),
       initialRoute:  (prefs.readPreferenceBool("welcome")) ? 'home' : 'welcome',
-      // initialRoute: "profile2",
+      // initialRoute: "welcome",
       routes: appRoutes,
     );
   }

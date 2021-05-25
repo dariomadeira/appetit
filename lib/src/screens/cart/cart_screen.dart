@@ -2,7 +2,6 @@ import 'package:appetit/src/localizations/app_localization.dart';
 import 'package:appetit/src/providers/bottom_navigation_provider.dart';
 import 'package:appetit/src/screens/cart/widgets/item_widget.dart';
 import 'package:appetit/src/widgets/empty_state_widget.dart';
-import 'package:appetit/src/widgets/background_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

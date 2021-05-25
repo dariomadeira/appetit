@@ -1,8 +1,8 @@
 { 
-
-  "bottom.nav.explorer": "Explorar",
-  "bottom.nav.cart": "Carrito",
-  "bottom.nav.favorites": "Favoritos",
+  
+  "bottom.nav.explorer": "Explorer",
+  "bottom.nav.cart": "Cart",
+  "bottom.nav.favorites": "Favorites",
 
   "welcome.slider1.title": "¿Hay Appetit? busca qué comer",
   "welcome.slider2.title": "Explora las opciones",
@@ -22,8 +22,9 @@
   "profile.dark.mode.deactive": "Modo desactivado",
   "profile.dark.mode.light": "Cambiar a modo claro",
   "profile.dark.mode.dark": "Cambiar a modo oscuro",
-  "profile.logout": "Cerrar sesión",
-  "profile.delete.account": "Borrar cuenta",
+  "profile.logout": "Cerrar\nsesión",
+  "profile.delete.account": "Borrar\ncuenta",
+  "profile.change.picture": "Cambiar\nfoto",
 
   "cart.empty": "No tienes ningún pedido\n¡Busca algo que te guste!",
   "cart.empty.btn.explore.now": "Explora ahora"
