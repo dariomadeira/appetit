@@ -3,7 +3,6 @@ import 'package:appetit/src/widgets/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../constants.dart';
-
 class ExploreScreen extends StatelessWidget {
 
   @override
@@ -18,7 +17,7 @@ class ExploreScreen extends StatelessWidget {
         accionSearch: () {},
       ),
       body: Center(
-        child: Text('Hola Mundo'),
+        child: Text('Explorar'),
      ),
    );
   }

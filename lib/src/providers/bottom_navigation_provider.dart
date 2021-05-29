@@ -1,9 +1,10 @@
 import 'package:appetit/src/screens/cart/cart_screen.dart';
 import 'package:appetit/src/screens/explore/explore_screen.dart';
 import 'package:appetit/src/screens/favorites/favorites_screen.dart';
+import 'package:appetit/src/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
-class TabsNavigationProvider with ChangeNotifier {
+class BottomNavigationProvider with ChangeNotifier {
   
   int currentIndex = 0;
 
@@ -22,6 +23,8 @@ class TabsNavigationProvider with ChangeNotifier {
         return FavoritesScreen();
       case 2:
         return CartScreen();
+      case 3:
+        return ProfileScreen();
       default:
         return ExploreScreen();
     }

@@ -66,9 +66,9 @@ class OptionTile extends StatelessWidget {
                   Text(
                     btnTitle,
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 18,
                       color: _themeProvider.darkTheme ? kDMTitleTextColor : kLMTitleTextColor,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w700,
                     ),
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -78,7 +78,7 @@ class OptionTile extends StatelessWidget {
                       btnSubtitle,
                       style: TextStyle(
                         fontSize: 14,
-                        // color: kGrayDark,
+                        fontWeight: FontWeight.w700,
                         color: _themeProvider.darkTheme ? kDMTextColor : kLMTextColor,
                       ),
                       overflow: TextOverflow.ellipsis,
@@ -91,7 +91,7 @@ class OptionTile extends StatelessWidget {
         ),
         Visibility(
           visible: noBottomSpace,
-          child: SizedBox(height: 20),
+          child: const SizedBox(height: 20),
         ),
       ],
     );

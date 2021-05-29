@@ -1,8 +1,8 @@
 { 
   
-  "bottom.nav.explorer": "Explorer",
-  "bottom.nav.cart": "Cart",
-  "bottom.nav.favorites": "Favorites",
+  "bottom.nav.explorer": "Explorar",
+  "bottom.nav.cart": "Pedidos",
+  "bottom.nav.favorites": "Favoritos",
 
   "welcome.slider1.title": "¿Hay Appetit? busca qué comer",
   "welcome.slider2.title": "Explora las opciones",
@@ -25,8 +25,13 @@
   "profile.logout": "Cerrar\nsesión",
   "profile.delete.account": "Borrar\ncuenta",
   "profile.change.picture": "Cambiar\nfoto",
+  "profile.hi": "¡Hola!",
 
   "cart.empty": "No tienes ningún pedido\n¡Busca algo que te guste!",
-  "cart.empty.btn.explore.now": "Explora ahora"
+  "cart.empty.btn.explore.now": "Explora ahora",
+  "cart.btn.paid": "Pagar",
+  "cart.header.title": "Tus pedidos",
+  "cart.header.subtitle": "¿Qué comerás?",
+  "cart.header.slide": "Desliza para quitar"
 
 }

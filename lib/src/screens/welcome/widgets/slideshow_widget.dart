@@ -265,7 +265,8 @@ class _Slide extends StatelessWidget {
             style: TextStyle(
               fontSize: 18,
               color: _themeProvider.darkTheme ? kDMTitleTextColor : kLMTitleTextColor,
-              fontWeight: FontWeight.w400,
+              fontWeight: FontWeight.w600,
+              height: 1.2,
             ),
           ),
           const SizedBox(

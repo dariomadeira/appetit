@@ -2,9 +2,7 @@ import 'package:appetit/src/providers/theme_provider.dart';
 import 'package:appetit/src/widgets/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import '../../../constants.dart';
-
 class FeedsScreen extends StatelessWidget {
 
   @override

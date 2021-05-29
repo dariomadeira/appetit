@@ -65,7 +65,6 @@ class EmptyState extends StatelessWidget {
                 visible: showBtn,
                 child: AptOutlineBtnWidget(
                   btnText: btnText,
-                  themeProvider: _themeProvider,
                   accion: btnAccion,
                 ),
               ),

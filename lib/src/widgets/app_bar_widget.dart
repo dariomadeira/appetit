@@ -1,4 +1,5 @@
 import 'package:appetit/constants.dart';
+import 'package:appetit/src/customs/appetit_icons.dart';
 import 'package:appetit/src/providers/theme_provider.dart';
 import 'package:appetit/src/widgets/app_avatar_widget.dart';
 import 'package:appetit/src/widgets/apt_rounder_btn_widget.dart';
@@ -13,7 +14,10 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   final bool showBack;
   final bool showLogo;
   final bool showSearch;
+  final bool showCartEmpty;
   final Function accionSearch;
+  final Function accionCartEmpty;
+  final String cartPrice;
 
   const AppBarWidget({
     Key key,
@@ -23,6 +27,9 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
     this.showLogo = true,
     this.showSearch = false,
     this.accionSearch,
+    this.showCartEmpty = false,
+    this.accionCartEmpty,
+    this.cartPrice,
   }) : super(key: key);
 
   @override
@@ -33,99 +40,95 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
       left: false,
       right: false,
       bottom: false,
-      child: Padding(
-        padding: const EdgeInsets.only(
-          left: 12,
-          right: 12,
-          top: 8,
-        ),
-        child: Container(
-          height: 64,
-          width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
-            border: Border.all(
-              width: 1,
-              color: _themeProvider.darkTheme ? Colors.grey[800] : Colors.black26.withOpacity(0.18),
-            ),
-            borderRadius: BorderRadius.circular(kDefaultPadding + 20),
-            color: _themeProvider.darkTheme ? kDMBackgroundPrimary : Colors.white, 
-            boxShadow: [
-              BoxShadow(
-                color: _themeProvider.darkTheme ? Colors.black.withOpacity(0.2) : Colors.grey.withOpacity(0.2), 
-                spreadRadius: 2,
-                blurRadius: 2,
-                offset: Offset(0, 0),
+      child: Container(
+        height: 56,
+        width: MediaQuery.of(context).size.width,
+        color: _themeProvider.darkTheme ? kDMBackgroundScreen : kLMBackgroundScreen,
+        child: Row(
+          children: [
+            const SizedBox(width: kDefaultPadding),
+            Expanded(
+              child: Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Visibility(
+                      visible: showBack,
+                      child: AptRounderBtnWidget(
+                        accion: () {
+                          Navigator.pop(context);
+                        },
+                        btnSize: 40,
+                        icon: Icons.arrow_back,
+                      ),
+                    ),
+                    Visibility(
+                      visible: showSearch,
+                      child: AptRounderBtnWidget(
+                        accion: accionSearch,
+                        btnSize: 40,
+                        icon: Icons.search,
+                      ),
+                    ),
+                    Visibility(
+                      visible: showCartEmpty,
+                      child: AptRounderBtnWidget(
+                        accion: accionCartEmpty,
+                        btnSize: 40,
+                        icon: Appetit.vaciar,
+                      ),
+                    ),
+                  ],
+                ),
               )
-            ],
-          ),
-          child: Row(
-            children: [
-              const SizedBox( width: 8),
-              Expanded(
-                child: Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Visibility(
-                        visible: showBack,
-                        child: AptRounderBtnWidget(
-                          accion: () {
-                            Navigator.pop(context);
-                          },
-                          btnSize: 40,
-                          icon: Icons.arrow_back,
-                        ),
-                      ),
-                      Visibility(
-                        visible: showSearch,
-                        child: AptRounderBtnWidget(
-                          accion: accionSearch,
-                          btnSize: 40,
-                          icon: Icons.search,
-                        ),
-                      ),
-                    ],
-                  ),
-                )
-              ),
-              showLogo ? SvgPicture.asset(
+            ),
+            Visibility(
+              visible: showLogo,
+              child: SvgPicture.asset(
                 'assets/svgs/logo.svg',
                 semanticsLabel: 'Appetit',
                 width: 100,
-              ) : null,
-              Expanded(
-                child: Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      // AptRounderBtnWidget(
-                      //   accion: () {
-                      //     Navigator.pop(context);
-                      //   },
-                      //   btnSize: 40,
-                      //   icon: Icons.arrow_back,
-                      // ),
-                      Visibility(
-                        visible: showAvatar,
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.pushNamed(context, 'profile');
-                          },
-                          child: AppAvatarWidget(
-                            //TODO traer los datos adecuados del logueo
-                            avatarImage: "",
-                            inicials: "DM",
-                            animateShowAvatar: true,
-                          ),
+              ),
+            ),
+            if (cartPrice != null) Text(
+              cartPrice,
+              style: TextStyle(
+                fontSize: 24,
+                color: kPriceColor,
+                fontWeight: FontWeight.w900,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    // AptRounderBtnWidget(
+                    //   accion: () {
+                    //     Navigator.pop(context);
+                    //   },
+                    //   btnSize: 40,
+                    //   icon: Icons.arrow_back,
+                    // ),
+                    Visibility(
+                      visible: showAvatar,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, 'profile');
+                        },
+                        child: AppAvatarWidget(
+                          //TODO traer los datos adecuados del logueo
+                          avatarImage: "",
+                          inicials: "DM",
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
-              const SizedBox( width: 8),
-            ],
-          ),
+            ),
+            const SizedBox( width: kDefaultPadding),
+          ],
         ),
       ),
     );

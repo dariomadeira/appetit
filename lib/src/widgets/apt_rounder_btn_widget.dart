@@ -4,6 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class AptRounderBtnWidget extends StatelessWidget {
+
+  final double btnSize;
+  final IconData icon;
+  final Function accion;
+  final Color backgroundColor;
+  final bool specialState;
+
   const AptRounderBtnWidget({
     Key key,
     @required this.btnSize,
@@ -12,12 +19,6 @@ class AptRounderBtnWidget extends StatelessWidget {
     this.backgroundColor,
     this.specialState = false,
   }) : super(key: key);
-
-  final double btnSize;
-  final IconData icon;
-  final Function accion;
-  final Color backgroundColor;
-  final bool specialState;
 
   Color _calculateBgColor(ThemeProvider _themeProvider) {
     Color result;
@@ -51,9 +52,9 @@ class AptRounderBtnWidget extends StatelessWidget {
       }
     } else {
       if(_themeProvider.darkTheme) {
-        result = kDMTitleTextColor;
+        result = kDMTextColor;
       } else {
-        result = kLMTitleTextColor;
+        result = kLMTextColor;
       }
     }
     return result;
