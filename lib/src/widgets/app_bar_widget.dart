@@ -75,7 +75,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                       child: AptRounderBtnWidget(
                         accion: accionCartEmpty,
                         btnSize: 40,
-                        icon: Appetit.vaciar,
+                        icon: Appetit.delete_bin,
                       ),
                     ),
                   ],

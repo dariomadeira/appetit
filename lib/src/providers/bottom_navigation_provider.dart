@@ -1,7 +1,7 @@
 import 'package:appetit/src/screens/cart/cart_screen.dart';
 import 'package:appetit/src/screens/explore/explore_screen.dart';
 import 'package:appetit/src/screens/favorites/favorites_screen.dart';
-import 'package:appetit/src/screens/profile/profile_screen.dart';
+import 'package:appetit/src/screens/feeds/feeds_screen.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigationProvider with ChangeNotifier {
@@ -20,11 +20,11 @@ class BottomNavigationProvider with ChangeNotifier {
       case 0:
         return ExploreScreen();
       case 1:
-        return FavoritesScreen();
+        return FeedsScreen();
       case 2:
-        return CartScreen();
+        return FavoritesScreen();
       case 3:
-        return ProfileScreen();
+        return CartScreen();
       default:
         return ExploreScreen();
     }

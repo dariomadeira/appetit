@@ -3,6 +3,7 @@
   "bottom.nav.explorer": "Explorar",
   "bottom.nav.cart": "Pedidos",
   "bottom.nav.favorites": "Favoritos",
+  "bottom.nav.news": "Nuevos",
 
   "welcome.slider1.title": "¿Hay Appetit? busca qué comer",
   "welcome.slider2.title": "Explora las opciones",
@@ -32,6 +33,17 @@
   "cart.btn.paid": "Pagar",
   "cart.header.title": "Tus pedidos",
   "cart.header.subtitle": "¿Qué comerás?",
-  "cart.header.slide": "Desliza para quitar"
+  "cart.header.slide": "Desliza para borrar",
+
+  "cart.pricex1": "Precio x unidad: ",
+  "cart.price": "Subtotal: ",
+  "cart.count": "Cantidad: ",
+  "cart.delete": "Borrar",
+
+  "feed.header.title": "¿Algo nuevo?",
+  "feed.header.subtitle": "¡Hay de todo!",
+  "feed.new.title": "Platos nuevos"
+  
+
 
 }

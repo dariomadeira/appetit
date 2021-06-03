@@ -18,7 +18,7 @@ class ExploreScreen extends StatelessWidget {
       ),
       body: Center(
         child: Text('Explorar'),
-     ),
-   );
+      ),
+    );
   }
 }

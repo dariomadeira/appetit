@@ -1,6 +1,7 @@
 import 'package:appetit/src/screens/cart/cart_screen.dart';
 import 'package:appetit/src/screens/explore/explore_screen.dart';
 import 'package:appetit/src/screens/favorites/favorites_screen.dart';
+import 'package:appetit/src/screens/feeds/feeds_screen.dart';
 import 'package:appetit/src/screens/home/home_screen.dart';
 import 'package:appetit/src/screens/profile/profile_screen.dart';
 import 'package:appetit/src/screens/welcome/welcome.dart';
@@ -13,4 +14,5 @@ final Map<String, Widget Function(BuildContext)> appRoutes = {
   'favorites': (_) => FavoritesScreen(),
   'welcome': (_) => WelcomeScreen(),
   'profile': (_) => ProfileScreen(),
+  'feed': (_) => FeedsScreen(),
 };
